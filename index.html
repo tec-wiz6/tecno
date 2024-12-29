@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEC-WIZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TEC-WIZ</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div id="news-container" class="news-grid">
+                    <!-- News will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:technologywiz10@gmail.com">technologywiz10@gmail.com</a></p>
+            <p>Phone: <a href="tel:+2349168823490">+234 916 882 3490</a></p>
+            <form method="POST" action="/submit" data-netlify="true">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <p>&copy; 2024 TEC-WIZ. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
